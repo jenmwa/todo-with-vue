@@ -1,5 +1,5 @@
 
 
 <template>
-    home
+    homeView
 </template>
