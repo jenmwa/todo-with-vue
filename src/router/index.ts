@@ -9,17 +9,17 @@ const router = createRouter({
       component: () => import('../views/HomeView.vue'),
     },
     {
-      path: '/todos',
+      path: '/todos/',
       name: 'todos',
       component: () => import('../views/TodosView.vue'),
     },
     {
-      path: '/categories',
+      path: '/categories/',
       name: 'categories',
       component: () => import('../views/CategoryView.vue'),
     },
     {
-      path: '/about',
+      path: '/about/',
       name: 'about',
       component: () => import('../views/AboutView.vue'),
     },
