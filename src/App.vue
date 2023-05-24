@@ -6,9 +6,9 @@ import { RouterView } from 'vue-router';
 <template>
   <h1>this is going to be my todo app</h1>
   <RouterLink to="/">Home</RouterLink> | 
-  <RouterLink to="/todos/">Todos</RouterLink> | 
-  <RouterLink to="/categories/">Categories</RouterLink> | 
-  <RouterLink to="/about/">About</RouterLink><br>
+  <RouterLink to="/todos">Todos</RouterLink> | 
+  <RouterLink to="/categories">Categories</RouterLink> | 
+  <RouterLink to="/about">About</RouterLink><br>
 
   <router-view></router-view>
 

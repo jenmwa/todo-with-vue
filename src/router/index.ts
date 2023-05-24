@@ -1,7 +1,7 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
@@ -9,32 +9,21 @@ const router = createRouter({
       component: () => import('../views/HomeView.vue'),
     },
     {
-      path: '/todos/',
+      path: '/todos',
       name: 'todos',
       component: () => import('../views/TodosView.vue'),
-      children: [
-        {
-          // Catch-all route for todos
-          path: '/:catchAll(.*)',
-          redirect: '/', // Redirect to the todos route
-        },
-      ],
     },
     {
-      path: '/categories/',
+      path: '/categories',
       name: 'categories',
       component: () => import('../views/CategoryView.vue'),
     },
     {
-      path: '/about/',
+      path: '/about',
       name: 'about',
       component: () => import('../views/AboutView.vue'),
     },
-    {
-      path: '/:catchAll(.*)',
-      redirect: '/',
-    },
-  ],
+  ]
 });
 
 export default router;
