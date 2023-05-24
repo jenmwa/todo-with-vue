@@ -12,6 +12,13 @@ const router = createRouter({
       path: '/todos/',
       name: 'todos',
       component: () => import('../views/TodosView.vue'),
+      children: [
+        {
+          // Catch-all route for todos
+          path: '/:catchAll(.*)',
+          redirect: '/todos', // Redirect to the todos route
+        },
+      ],
     },
     {
       path: '/categories/',
