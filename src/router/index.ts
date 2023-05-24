@@ -16,7 +16,7 @@ const router = createRouter({
         {
           // Catch-all route for todos
           path: '/:catchAll(.*)',
-          redirect: '/todos', // Redirect to the todos route
+          redirect: '/', // Redirect to the todos route
         },
       ],
     },
