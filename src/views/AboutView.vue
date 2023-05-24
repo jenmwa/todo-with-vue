@@ -1,4 +1,4 @@
 
 <template>
-    about
+    about this page View
 </template>

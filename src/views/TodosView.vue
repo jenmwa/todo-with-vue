@@ -1,3 +1,3 @@
 <template>
-    todos
+    todos View
 </template>

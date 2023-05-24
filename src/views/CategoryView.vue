@@ -1,4 +1,4 @@
 
 <template>
-    categories
+    categories view
 </template>
